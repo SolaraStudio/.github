@@ -20,7 +20,7 @@ We build open‑source tools for the modern web. Our flagship project is Solara 
 | [extension](https://github.com/SolaraStudio/extension) | Extension system | TypeScript |
 | [mod](https://github.com/SolaraStudio/mod) | Mods marketplace | CSS + JSON |
 | [runtime](https://github.com/SolaraStudio/runtime) | Core engine | Rust |
-| [webview](https://github.com/SolaraStudio/webview) | Web rendering engine | Kotlin |
+| [webview](https://github.com/SolaraStudio/webview) | Web rendering engine | Pure Rust |
 | [search-api](https://github.com/SolaraStudio/search-api) | Search provider API | Kotlin |
 
 ---
