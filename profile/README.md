@@ -14,13 +14,13 @@ We build open‑source tools for the modern web. Our flagship project is Solara 
 
 | Repository | Purpose | Language |
 |------------|---------|----------|
-| [solara](https://github.com/SolaraStudio/solara) | Android browser app | Kotlin + Compose |
+| [Solara](https://github.com/SolaraStudio/Solara) | Android browser app | Kotlin + Compose |
 | [web](https://github.com/SolaraStudio/web) | Website | HTML + CSS + JS |
 | [docs](https://github.com/SolaraStudio/docs) | Documentation | Markdown |
 | [extension](https://github.com/SolaraStudio/extension) | Extension system | TypeScript |
 | [mod](https://github.com/SolaraStudio/mod) | Mods marketplace | CSS + JSON |
-| [runtime](https://github.com/SolaraStudio/runtime) | Core engine | Rust |
-| [webview](https://github.com/SolaraStudio/webview) | Web rendering engine | Pure Rust |
+| [Solarium](https://github.com/SolaraStudio/Solarium) | Core engine | Zig |
+| [Optima](https://github.com/SolaraStudio/Optima) | WebView engine | Rust |
 | [search-api](https://github.com/SolaraStudio/search-api) | Search provider API | Kotlin |
 
 ---
@@ -41,8 +41,8 @@ We build open‑source tools for the modern web. Our flagship project is Solara 
 | Layer | Technology |
 |-------|------------|
 | UI | Jetpack Compose + Material 3 |
-| Language | Kotlin, Rust, TypeScript |
-| Build | Gradle (Kotlin DSL), Cargo |
+| Language | Kotlin, Rust, TypeScript, Zig |
+| Build | Gradle (Kotlin DSL), Cargo, Zig |
 | CI/CD | GitHub Actions |
 | Hosting | GitHub Pages |
 | License | MPL‑2.0 |
@@ -77,10 +77,9 @@ We welcome contributions from the community. Please read our Contributing Guide 
 
 ## Community
 
-- Website
+- Website (unfinished/unavailable)
 - GitHub Discussions
 - Discord (coming soon)
-- Matrix (coming soon)
 
 ---
 
