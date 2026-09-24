@@ -1,6 +1,6 @@
 # SolaraStudio
 
-Building Solara Browser – a minimal Android browser with glass‑morphism UI, vertical tabs, and Material 3 dynamic color.
+Building Solara Browser – a minimal, Android browser built with Kotlin and Jetpack Compose.
 
 ---
 
