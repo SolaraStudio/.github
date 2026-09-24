@@ -1,88 +1,123 @@
 # SolaraStudio
 
-Building Solara Browser – a minimal, Android browser built with Kotlin and Jetpack Compose.
+Open-source tools for the modern web. Our flagship is Solara Browser — a minimal, privacy-first Android browser built from the ground up.
 
 ---
 
-## Our Mission
+## What we build
 
-We build open‑source tools for the modern web. Our flagship project is Solara Browser – a browser that feels like light. We believe in privacy, performance, and beautiful design.
+We are building a complete browser stack from scratch. No Chromium. No system WebView. No compromises.
 
----
+- Solara — the flagship Android browser. Kotlin, Jetpack Compose, Material 3.
+- Solaria — the same experience for older devices. Java, Views, API 21+.
+- Optima — the rendering engine. Rust. HTML, CSS, DOM, layout, paint.
+- Solarium — the JavaScript engine. Zig. Written from scratch.
+- Solarian — search provider API. Kotlin.
 
-## The Solara Ecosystem
-
-| Repository | Purpose | Language |
-|------------|---------|----------|
-| [Solara](https://github.com/SolaraStudio/Solara) | Android browser app | Kotlin + Compose |
-| [web](https://github.com/SolaraStudio/web) | Website | HTML + CSS + JS |
-| [docs](https://github.com/SolaraStudio/docs) | Documentation | Markdown |
-| [extension](https://github.com/SolaraStudio/extension) | Extension system | TypeScript |
-| [mod](https://github.com/SolaraStudio/mod) | Mods marketplace | CSS + JSON |
-| [Solarium](https://github.com/SolaraStudio/Solarium) | Core engine | Zig |
-| [Optima](https://github.com/SolaraStudio/Optima) | WebView engine | Rust |
-| [Solarian](https://github.com/SolaraStudio/Solarian) | Search provider API | Kotlin |
+Plus the surrounding ecosystem — website, docs, extensions, mods.
 
 ---
 
-## Features
+## Repositories
 
-- Glass‑morphism UI with live blur
-- Vertical tabs with slide‑out panel
-- Material 3 dynamic color (Material You)
-- Multi‑ABI builds (arm‑v7a, arm‑v8a, x86, x86_64)
-- Built‑in extension and mod system
-- Community‑driven development
+| Repository | Purpose | Language | License |
+|------------|---------|----------|---------|
+| [`Solara`](https://github.com/SolaraStudio/Solara) | Flagship Android browser (API 24+) | Kotlin + Compose | MPL-2.0 |
+| [`Solaria`](https://github.com/SolaraStudio/Solaria) | Android browser for older devices (API 21+) | Java + Views | MPL-2.0 |
+| [`Optima`](https://github.com/SolaraStudio/Optima) | Rendering engine | Rust | MIT OR Apache-2.0 |
+| [`Solarium`](https://github.com/SolaraStudio/Solarium) | JavaScript engine | Zig | MPL-2.0 |
+| [`Solarian`](https://github.com/SolaraStudio/Solarian) | Search provider API | Kotlin | MPL-2.0 |
+| [`web`](https://github.com/SolaraStudio/web) | Official website | HTML + CSS + JS | MPL-2.0 |
+| [`docs`](https://github.com/SolaraStudio/docs) | Documentation | Markdown | MPL-2.0 |
+| [`extension`](https://github.com/SolaraStudio/extension) | Extension system SDK | TypeScript | MPL-2.0 |
+| [`mod`](https://github.com/SolaraStudio/mod) | Mods marketplace | CSS + JSON | MPL-2.0 |
 
 ---
 
-## Technology Stack
+## Design principles
+
+- Privacy by default. No telemetry. No tracking. No accounts required.
+- Performance first. Rust and Zig engines. Small binary size. Fast startup.
+- Own the stack. We build our own rendering and JavaScript engines — no Chromium, no WebView.
+- Quiet, beautiful UI. Material You, glass-morphism, no clutter.
+- Accessible to all. Support for older devices. No forced obsolescence.
+
+---
+
+## Technology stack
 
 | Layer | Technology |
 |-------|------------|
 | UI | Jetpack Compose + Material 3 |
-| Language | Kotlin, Rust, TypeScript, Zig |
+| App | Kotlin, Java |
+| Rendering | WebVeiw - Rust |
+| JavaScript | Runtime - Zig |
+| Extensions | TypeScript |
+| Search API | Kotlin |
 | Build | Gradle (Kotlin DSL), Cargo, Zig |
 | CI/CD | GitHub Actions |
-| Hosting | GitHub Pages |
-| License | MPL‑2.0 |
+|Hosting | GitHub Pages |
 
 ---
 
-## Getting Started
+## Getting started
+
+### Build the flagship browser:
 
 ```bash
-# Clone the main app
-git clone https://github.com/SolaraStudio/solara.git
-cd solara/android
+git clone https://github.com/SolaraStudio/Solara.git
+cd Solara/android
 ./gradlew assembleRelease
 ```
 
-For more details, visit our website or read the documentation.
+Build the rendering engine:
+
+```bash
+git clone https://github.com/SolaraStudio/Optima.git
+cd Optima
+cargo build --release
+```
+
+Build the JavaScript runtime:
+
+```bash
+git clone https://github.com/SolaraStudio/Solarium.git
+cd Solarium
+zig build
+```
+
+---
+
+## Project status
+
+Solara is Under Development. Optima already renders static HTML and CSS; Solarium (JavaScript) is under construction.
+
+Progress is tracked in each repository's issues and milestones. Roadmaps are posted in the individual repos.
 
 ---
 
 ## Contributing
 
-We welcome contributions from the community. Please read our Contributing Guide before submitting a pull request.
+We welcome contributions of any size. Each repository has its own CONTRIBUTING.md, but the process is the same everywhere:
 
-### How to Contribute
+1. Fork the repository.
+2. Create a feature branch.
+3. Make your changes with tests.
+4. Open a pull request.
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Open a pull request
+For larger changes, open an issue or discussion first so we can align on the approach before you write code.
 
 ---
 
 ## Community
 
-- Website (unfinished/unavailable)
-- GitHub Discussions
-- Discord (coming soon)
+- GitHub Discussions — questions, ideas, feedback
+- GitHub Issues — bug reports and feature requests
+- Website — coming soon
+- Discord — coming soon
 
 ---
 
 ## License
 
-All SolaraStudio repositories are licensed under the Mozilla Public License 2.0 unless otherwise noted.
+Most SolaraStudio repositories are licensed under the Mozilla Public License 2.0.
