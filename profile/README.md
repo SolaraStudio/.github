@@ -21,7 +21,7 @@ We build open‑source tools for the modern web. Our flagship project is Solara 
 | [mod](https://github.com/SolaraStudio/mod) | Mods marketplace | CSS + JSON |
 | [Solarium](https://github.com/SolaraStudio/Solarium) | Core engine | Zig |
 | [Optima](https://github.com/SolaraStudio/Optima) | WebView engine | Rust |
-| [search-api](https://github.com/SolaraStudio/search-api) | Search provider API | Kotlin |
+| [Solarian](https://github.com/SolaraStudio/Solarian) | Search provider API | Kotlin |
 
 ---
 
