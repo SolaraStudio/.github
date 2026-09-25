@@ -11,7 +11,7 @@ We are building a complete browser stack from scratch. No Chromium. No system We
 - Solara — the flagship Android browser. Kotlin, Jetpack Compose, Material 3.
 - Solaria — the same experience for older devices. Java, Views, API 21+.
 - Optima — the rendering engine. Rust. HTML, CSS, DOM, layout, paint.
-- Solarium — the JavaScript engine. Zig. Written from scratch.
+- Solarium — the Runtime engine. Zig. Written from scratch.
 - Solarian — search provider API. Kotlin.
 
 Plus the surrounding ecosystem — website, docs, extensions, mods.
@@ -25,7 +25,7 @@ Plus the surrounding ecosystem — website, docs, extensions, mods.
 | [`Solara`](https://github.com/SolaraStudio/Solara) | Flagship Android browser (API 24+) | Kotlin + Compose | MPL-2.0 |
 | [`Solaria`](https://github.com/SolaraStudio/Solaria) | Android browser for older devices (API 21+) | Java + Views | MPL-2.0 |
 | [`Optima`](https://github.com/SolaraStudio/Optima) | Rendering engine | Rust | MIT OR Apache-2.0 |
-| [`Solarium`](https://github.com/SolaraStudio/Solarium) | JavaScript engine | Zig | MPL-2.0 |
+| [`Solarium`](https://github.com/SolaraStudio/Solarium) | Runtime engine | Zig | MPL-2.0 |
 | [`Solarian`](https://github.com/SolaraStudio/Solarian) | Search provider API | Kotlin | MPL-2.0 |
 | [`web`](https://github.com/SolaraStudio/web) | Official website | HTML + CSS + JS | MPL-2.0 |
 | [`docs`](https://github.com/SolaraStudio/docs) | Documentation | Markdown | MPL-2.0 |
@@ -90,7 +90,7 @@ zig build
 
 ## Project status
 
-Solara is Under Development. Optima already renders static HTML and CSS; Solarium (JavaScript) is under construction.
+Solara is Under Development. Optima already renders static HTML and CSS; Solarium (Runtime) is under construction.
 
 Progress is tracked in each repository's issues and milestones. Roadmaps are posted in the individual repos.
 
